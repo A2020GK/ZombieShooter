@@ -111,9 +111,9 @@ function app() {
         let zombieSpeed=1;
 
         if(points<20) zombieSpeed=1;
-        else if(19<points) zombieSpeed=2;
-        else if(39<points) zombieSpeed=3;
-        else if(59<points) zombieSpeed=4;
+        if(19<points) zombieSpeed=2;
+        if(39<points) zombieSpeed=3;
+        if(59<points) zombieSpeed=4;
 
         zombie.x+=zombieSpeed;
 
